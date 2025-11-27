@@ -161,26 +161,25 @@ body {
 }
 
 
-/* Start */
+/* Hero Section */
 
-.container-start{
-    max-width: 100%;
-    max-height: 44vh;
+.container-hero{
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    height: 44vh;
     display: flex;
-
-    
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 0;
 }
 
-.meow-placeholder{
-
-    display: flex;  
-    margin-top: 238px;
-    max-height: 63vh; 
-    max-width: 63vh;
-    justify-content: center;
-    align-self: center;
+.hero-content{
+    
+    display: flex;
     align-items: flex-end;
-
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .meow-image{
@@ -188,20 +187,18 @@ body {
 
     height: 448px; 
     width: auto;
-
 }
 
 /* Animation */
 
 .container-animation{
-
     width: 100%;
     background-color: var(--text-dark);
-    height: 100vh;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .surf-placeholder{
@@ -209,121 +206,108 @@ body {
     max-width: var(--container-max-width);
     display: flex;
     flex-direction: column;
-    position:relative;
+    position: relative;
     padding: 0;
     margin: 0 auto;
-    min-width: none;
-    height: auto;
+    width: 100%;
 }
 
 .surf-image{
+    /* width: 100%;
+    height: auto;
+    display: block; */
 
     height: auto;
     min-width: none;
+    margin-bottom: auto;
+
+    top: 0;
 }
 
 .animation-section{
-    flex: 1;
-
-    justify-self: center;
-    align-self: center;
+    display: flex;
     justify-content: center;
-    width: 1280px;
-    height: 720px;
-    padding-top: 211px;
-    padding-bottom: 262px;   
-
+    align-items: center;
+    padding: 60px 0;
+    width: 100%;
 }
 
 .animation-placeholder{
-    background-color: #f0eae0;
-    align-self: center;
-    width: 1280px;
-    height: 720px;
-    
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1130px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border: none;
 }
 
-
-
 .surf-bottom-image{
-    align-self: flex-end;
-    height: 262px;
     width: 100%;
+    height: auto;
     transform: rotate(180deg);
-    position:absolute;
-    bottom:0;   
-
+    display: block;
 }
 
 /* Story */
 
 .story-container{
-    height: auto;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
 .section-story{
-
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 1080px;
+    flex-direction: column;
+    min-height: 1080px;
+
 }
 
-
-
 .idea-container{
-    width: 100%;
+    width: auto;
     font-size: 24px;
     font-weight: 400;
     color: var(--text-black);
+    line-height: 1.5;
+   
     margin-left: 115px;
-
-    
 
 }
 
 .text-idea-placeholder-1{
     background-color: var(--bg-beige-alt);
     width: 555px;
-    padding: 21px;
-
+    padding: 20px 24px;
 
 }
 
 .text-idea-placeholder-2{
     background-color: var(--bg-beige-alt);
     width: 670px;
+    padding: 20px 24px;
     margin-left: calc(var(--guide-and-gap-width) * 4);
-    padding: 21px;
+
 
 }
 
 .text-idea-placeholder-3{
     background-color: var(--bg-beige-alt);
     width: 670px;
+    padding: 20px 24px;
+    margin-bottom: 0;
     margin-left: 115px;
-    padding: 21px;
-
 }
 
 
 
 /* Main character */
 
-.character-list{
-
-    position: relative;
-    
-    
-}
-
 .main-character-section{
-
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -331,10 +315,8 @@ body {
 
 }
 
-
-
 .main-character{
-    margin-top: 106px;
+
     display: flex;
     height: 630px;
     width: 100%;
@@ -342,10 +324,13 @@ body {
     justify-content: center;
 }
 
+
+
 .text-main-placeholder{
-
     padding-right: 115px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text-main-1{
@@ -353,14 +338,22 @@ body {
     width: auto;
     margin-left: 20px;
     margin-right: 115px;
-    padding: 21px;
+    padding: 20px 24px;
     font-size: 24px;
     font-weight: 400;
     color: var(--text-black);
-
+    line-height: 1.5;
 }
 
 .text-main-2{
+    background-color: var(--bg-beige-alt);
+    padding: 20px 24px;
+
+    font-weight: 400;
+    color: var(--text-black);
+    line-height: 1.5;
+    margin-left: 115px;
+
     background-color: var(--bg-beige-alt);
     width: auto;
     margin-left: 135px;
@@ -373,32 +366,94 @@ body {
 
 /* Dog */
 
+.dog-section{
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+
+.dog-description-section{
+
+    display: flex;
+    height: 630px;
+    width: 100%;
+    justify-content: center;
+    
+
+}
+
 .text-dog-placeholder{
 
+    padding-right: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
 
-    background-color: var(--bg-beige-alt);
+}
+
+.dog-image{
+    width: auto;
     height: auto;
+}
+
+.text-dog-placeholder-1{
+    background-color: var(--bg-beige-alt);
+    height: 450px;
     width: 670px;
     padding: 21px;
-    margin-top: 100px;
-    margin-left: calc(var(--guide-and-gap-width) * 2);
+
+
     font-size: 24px;
     font-weight: 400;
     color: var(--text-black);
-
-    z-index: 10;
 }
 
+.dog-description-section{
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 2px 0 20px 0;
+}
+
+.text-dog-placeholder-2{
+    background-color: var(--bg-beige-alt);
+    width: 555px;
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-black);
+    line-height: 1.5;
+}
+
+/* Tower and Radio */
+
+.tower-character-section{
+
+    max-width: 100%;
+    display: flex;
+    height: 64vh;
+
+
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    align-items: flex-end;
+}
 
 
 .tower-character-section{
     max-width: 100%;
     display: flex;
     height: 64vh;
+    
 }
 
 .radio-image{
     width: 440px;
+    margin-bottom: 100%;
 }
 
 .tower-character-frame{
@@ -407,6 +462,7 @@ body {
     justify-content: space-between;
     align-self: flex-end;
     margin-left: auto;
+    margin-bottom: -18px;
 
 }
 
@@ -431,7 +487,6 @@ body {
     bottom: 0;
     align-self: flex-end;
 }
-
 
 
 
@@ -528,6 +583,263 @@ body {
     width: 100%;
     color: var(--text-black);
 }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body::before {
+        content: "Экран ≤ 768px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: red;
+        color: white;
+        z-index: 9999;
+    }
+}
+
+@media (min-width: 769px) {
+    body::before {
+        content: "Экран ≥ 769px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: green;
+        color: white;
+        z-index: 9999;
+    }
+}
+
+
+
+
+
+
+/* Responsive Design
+
+@media screen and (max-width: 1400px) {
+    :root {
+        --container-max-width: 95%;
+    }
+    
+    .header-container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-right {
+        gap: 10px;
+    }
+    
+    .container-link {
+        min-width: 180px;
+        height: 70px;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+    }
+    
+    .animation-placeholder {
+        max-width: 90%;
+    }
+    
+    .text-idea-placeholder-1,
+    .text-idea-placeholder-2,
+    .text-idea-placeholder-3,
+    .text-dog-placeholder-1,
+    .text-dog-placeholder-2,
+    .text-tower-placeholder,
+    .text-conclusion-placeholder {
+        max-width: 90%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title-placeholder {
+        font-size: 28px;
+        width: auto;
+    }
+    
+    .header-right {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .container-link {
+        min-width: 150px;
+        height: 60px;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+    
+    .meow-image {
+        height: 220px;
+    }
+    
+    .main-character {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-character img {
+        width: 220px;
+    }
+    
+    .text-main-2 {
+        margin-left: 0;
+    }
+    
+    .tower-character-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .radio-image,
+    .image-tower {
+        width: 220px;
+        margin: 0;
+    }
+    
+    .dog-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dog-image {
+        width: 220px;
+    }
+    
+    .text-dog-placeholder-1 {
+        max-width: 90%;
+    }
+    
+    .text-dog-placeholder-2 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .title-placeholder {
+        font-size: 24px;
+    }
+    
+    .header-right {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .container-link {
+        min-width: 140px;
+        height: 50px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+    
+    .container-hero {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .meow-image {
+        height: 180px;
+    }
+    
+    .animation-placeholder {
+        max-width: 95%;
+    }
+    
+    .idea-container,
+    .text-main-1,
+    .text-main-2,
+    .text-dog-placeholder-1,
+    .text-dog-placeholder-2,
+    .text-tower-placeholder,
+    .text-conclusion-placeholder {
+        font-size: 16px;
+    }
+    
+    .dog-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .dog-image {
+        width: 180px;
+    }
+    
+    .text-idea-placeholder-1,
+    .text-idea-placeholder-2,
+    .text-idea-placeholder-3,
+    .text-dog-placeholder-1,
+    .text-dog-placeholder-2,
+    .text-tower-placeholder,
+    .text-conclusion-placeholder {
+        width: 90%;
+        padding: 16px 20px;
+    }
+    
+    .text-idea-placeholder-2 {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title-placeholder {
+        font-size: 20px;
+    }
+    
+    .container-link {
+        min-width: 120px;
+        height: 45px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+    
+    .meow-image {
+        height: 150px;
+    }
+    
+    .main-character img,
+    .radio-image,
+    .image-tower,
+    .dog-image {
+        width: 180px;
+    }
+    
+    .dog-section {
+        padding: 10px;
+    }
+    
+    .text-idea-placeholder-1,
+    .text-idea-placeholder-2,
+    .text-idea-placeholder-3,
+    .text-dog-placeholder-1,
+    .text-dog-placeholder-2,
+    .text-tower-placeholder,
+    .text-conclusion-placeholder {
+        width: 95%;
+        font-size: 14px;
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+} */
 
 
 
